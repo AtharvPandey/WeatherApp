@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(38, 38, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color: #fff;
+    margin: 80px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #303030;
+    padding: 10px 20px;
+    height: 55px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 23px;
+}
+
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.search button img{
+    width: 28px;
+}
+
+.weather-icon{
+    width: 150px;
+    margin-top: 15px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+.weather h2{
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    margin-top: 40px;
+}
+
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+}
+
+.col img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.humidity , .wind{
+    font-size: 30px;
+    margin-top: -6px;
+}
+
+.humidity p , .wind P{
+    font-size: 20px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 500px) {
+    /* iPhone 12 */
+    .card {
+        width: 90%;
+        margin: 80px auto 0;
+        padding: 30px 25px;
+    }
+    .search input {
+        width: 100%;
+        padding: 10px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    
+    .search button {
+        width: 45px;
+        height: 45px;
+    }
+    .search button img{
+        width: 20px;
+    }
+
+    .weather h1 {
+        font-size: 55px;
+    }
+
+    .weather h2 {
+        font-size: 40px;
+    }
+
+    .col img {
+        width: 40px;
+    }
+
+    .humidity,
+    .wind {
+        font-size: 25px;
+    }
+
+    .humidity p,
+    .wind p {
+        font-size: 16px;
+    }
+
+    .col {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .col img {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 15px;
+    display: none;
+}
